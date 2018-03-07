@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Blog</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Titulo</th>
+        <th>Fecha</th>
+        <th>Foto</th>
+        <th>Descripcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <td>{{ book.titulo }}</td>
+        <td>{{ book.fecha }}</td>
+        <td><img src='{{book.foto}}'></td>
+        <td>{{ book.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
